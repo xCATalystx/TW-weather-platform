@@ -13,6 +13,7 @@ body main {
   max-width: 1200px;
   width: 100%;
   margin: auto;
+  height: 896px;
 }
 
 body main .topPage {
