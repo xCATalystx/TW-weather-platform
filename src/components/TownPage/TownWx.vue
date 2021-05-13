@@ -2,7 +2,7 @@
     <div class="weather" v-for="i in townWxInfo">
         <div class="weatherWrap">
             <div class="weatherImg">
-                <img :src="'images/weatherImg/'+i.wxV+'.svg'" :alt="i.wx">
+                <img :src="require('../../assets/images/weatherImg/'+i.wxV+'.svg')" :alt="i.wx">
             </div>
             <div class="location">
                 <span><i class="fas fa-map-marker-alt"></i> {{ i.county }} {{ i.town }}</span>
