@@ -12,5 +12,5 @@ git add -A
 git commit -m 'deploy'
 
 # 將 dist資料夾中的內容推送至遠端的 gh-pages分支中，並強制無條件將舊有的內容取代成目前的內容（指令 git push -f)
-git push -f https://github.com/xCATalystx/TW-weather-platform.git main:gh-pages
+git push -f https://github.com/xCATalystx/TW-weather-platform.git master:gh-pages
 cd -
