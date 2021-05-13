@@ -7,7 +7,7 @@
                 <li><span><i class="fas fa-temperature-low"></i> {{ i.minT }}~{{ i.maxT }}˚C</span></li>
                 <li><span><i class="fas fa-umbrella"></i>{{ i.pop }}<i>%</i></span></li>
             </div>
-            <img :src="require('../../assets/images/weatherImg/'+i.wxV+'.svg')" :alt="i.wx">
+            <img :src="require('../../assets/images/weatherimg/'+i.wxV+'.svg')" :alt="i.wx">
             <div class="timeInfo">
                 <p>{{ i.date[1] }}/{{ i.date[2] }}</p>
             </div>
