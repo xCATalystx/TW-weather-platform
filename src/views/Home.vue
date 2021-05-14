@@ -47,7 +47,7 @@
                       <span><i class="fas fa-map-marker-alt"></i> {{ i.county }}</span>
                   </div>
                   <div class="wxPageImg">
-                      <img :src="require('../assets/images/weatherimg/'+i.wxV+'.svg')" :alt="i.wx">
+                      <img :src="require('@/assets/images/weatherImg/'+i.wxV+'.svg')" :alt="i.wx">
                   </div>
               </div>
               <div class="wxPage2">
@@ -76,7 +76,7 @@
                           <span><i class="fas fa-temperature-low"></i> {{ s.minT }}~{{ s.maxT }}˚C</span>
                           <span><i class="fas fa-umbrella"></i>{{ s.pop }}<i>%</i></span>
                       </div>
-                      <img @click="twMapSelect($event); clicked = s.value" :class="{hidden:clicked === s.value}" :src="require('../assets/images/weatherimg/'+s.wxV+'.svg')" :alt="s.county+'：'+s.wx" :title="s.county+'：'+s.wx">
+                      <img @click="twMapSelect($event); clicked = s.value" :class="{hidden:clicked === s.value}" :src="require('@/assets/images/weatherImg/'+s.wxV+'.svg')" :alt="s.county+'：'+s.wx" :title="s.county+'：'+s.wx">
                   </a>
               </div>
               <svg xmlns="http://www.w3.org/2000/svg" class="twMap" viewBox="0 0 1440 2055" width="480" height="685" >
@@ -367,7 +367,7 @@
           </div>
       </div>
       <div class="sunnyDoll">
-        <img src="../assets/images/sunnydoll.svg" alt="">
+        <img src="@/assets/images/sunnyDoll.svg" alt="">
       </div>
     </div>
   </div>
