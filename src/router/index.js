@@ -1,28 +1,24 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '@/views/Home.vue'
-// import TownPage from '../views/TownPage.vue'
+import CountyWeather from '@/views/CountyPage.vue'
+import TownPage from '@/views/TownPage.vue'
 
 const routes = [
+  
   {
     path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/CountyWeather',
     name: 'CountyWeather',
-    component: () => import('@/views/Home.vue')
+    component: CountyWeather,
   },
   {
     path: '/TownWeather',
     name: 'TownWeather',
-    component: () => import('@/views/TownPage.vue')
+    component: TownPage,
   }
 ]
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes
+  routes,
 })
 
 export default router

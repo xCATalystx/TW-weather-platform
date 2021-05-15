@@ -1,7 +1,7 @@
 <template>
 <main>
   <div id="nav">
-    <router-link to="/CountyWeather">全台縣市氣象</router-link> |
+    <router-link to="/">全台縣市氣象</router-link> |
     <router-link to="/TownWeather">鄉鎮地區氣象</router-link>
   </div>
   <section>
